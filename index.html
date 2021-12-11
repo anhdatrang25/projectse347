@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Quản lý thông tin sinh viên</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body onload="renderListStudent()">
+  <h1>LẬP HỒ SƠ SINH VIÊN</h1>
+  <div class="form" name="myform">
+    <h3>THÔNG TIN SINH VIÊN</h3>
+    <label for="">Họ và tên</label>
+    <input type="text" id="fname" placeholder="Điền thông tin">
+    <span id="fname-error" class="error"></span>
+    <br>
+
+    <label for="">Email</label>
+    <input type="text" id="email" placeholder="Email">
+    <span id="email-error" class="error"></span>
+    <br>
+
+    <label for="">Phone</label>
+    <input type="text" id="phone" placeholder="Số điện thoại">
+    <span id="phone-error" class="error"></span>
+    <br>
+
+    <label for="">Địa chỉ</label>
+    <input type="text" id="address" placeholder="Nhập địa chỉ">
+    <span id="address-error" class="error"></span>
+    <br>
+
+    <label for="">Giới tính</label>
+    <input type="radio" id="male" name="gender" value="male" checked> Nam
+    <input type="radio" id="female" name="gender" value="female"> Nữ
+    <span id="gender-error" class="error"></span>
+    <br>
+    <br>
+
+    <button onclick="save()">Submit</button>
+  </div>
+
+  <div class="list-student">
+    <h3>DANH SÁCH SINH VIÊN</h3>
+    <table id="grid-students">
+    </table>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
